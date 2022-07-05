@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../public/text/Montserrat-VariableFont_wght.ttf");
+}
+
+body{
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+}
+
+#detailsNav:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+}
+
+#detailsNav:after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-top: 150px solid #1e293b;
+    border-bottom: 60px solid transparent;
+    border-left: 150px solid #ffffff;
+    left: 30%;
+}
+
+@media screen and (max-width:1260px) {
+    #detailsNav:before{
+        width: 20%;
+    }
+
+    #detailsNav:after{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #detailsNav:before{
+        width: 10%;
+    }
+
+    #detailsNav:after{
+        left: 10%;
+    }
+}
+
+@media screen and (max-width:935px) {
+    #detailsNav:before{
+        width: 5%;
+    }
+
+    #detailsNav:after{
+        left: 5%;
+    }
+}
+
+@media screen and (max-width:885px) {
+    #detailsNav{
+       display: none;
+    }
+}
+
+.slider-overlay-tilt{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 9vw;
+    padding: 85px 275px 185px 180px;
+    color: #fff;
+    background-color: rgba(18, 24, 32, 0.8);
+    -webkit-clip-path: polygon(0 0%, 68% 0, 100% 100%, 32% 100%);
+    clip-path: polygon(0 0%, 68% 0, 100% 100%, 32% 100%);
+}
+
+.slider-overlay-title{
+    font-size: 10rem;
+    line-height: 9rem;
+}
+
+@media screen and (max-width:1024px) {
+    .slider-overlay-tilt{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slider-overlay-tilt{
+        right: 10;
+        -webkit-clip-path: unset;
+        clip-path: unset;
+        padding: 35px 35px 35px 35px;
+    }
+
+    .slider-overlay-title{
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+}
+
+
+
+.header-overlay-tilt{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 9vw;
+    padding: 60px 275px 185px 180px;
+    color: #fff;
+    background-color: rgba(18, 24, 32, 0.8);
+    -webkit-clip-path: polygon(0 0%, 68% 0, 100% 100%, 32% 100%);
+    clip-path: polygon(0 0%, 68% 0, 100% 100%, 32% 100%);
+}
+
+.header-overlay-title{
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.active-form:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgb(185, 28, 28);
+    border-bottom: 10px solid #00000000;
+    border-left: 10px solid rgb(185, 28, 28);
+    border-right: 10px solid #00000000;
+    top: 10px;
+    left: 10px;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    list-style: none;
+}
+
+/* Coloane contact */
+.b-contacts {
+    position: relative;
+    margin-top: 50px;
+    padding: 70px 10px 40px;
+    background-color: #f1f5fa;
+    text-align: center;
+}
+/* Iconite */
+.ic {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+    line-height: 80px;
+    color: #fff;
+    background-color: #253241;
+}
+/* Fundal culoarea primara */
+.bg-primary {
+    background-color: #d01818 !important;
+}
+.text-primary {
+    color: #d01818!important;
+}
+.ui-title-inner {
+    color: #253241;
+    font: 700 30px Montserrat;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    height: 60px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+    border-radius: 2px;
+    border: 1px solid #dddddd;
+    color: #cccccc;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.section-form-contacts {
+
+    padding-left: 15px;
+  }
+
+  .b-form-contacts {
+    margin-top: 40px;
+  }
+
+  .b-form-contacts .form-group {
+    margin-bottom: 15px;
+  }
+
+  .b-form-contacts .btn {
+    margin-top: 30px;
+  }
+
+  .b-form-contacts .form-control {
+    padding-left: 24px;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #d01818;
+    border-color: #d01818;
+}
+.btn-contact-form {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 16px;
+    border: 1px solid transparent;
+    padding: 16px 40px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.b-contacts__title {
+    margin-bottom: 10px;
+    font: 700 18px Montserrat;
+    color: #253241;
+}
+.b-advantages {
+    position: relative;
+    padding: 30px 30px 45px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 8px rgba(129, 129, 129, 0.06);
+    text-align: center;
+  }
+
+  .b-advantages:after {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent;
+    content: '';
+  }
+
+  .b-advantages__ic {
+    font-size: 75px;
+    color: #253241;
+  }
+
+  .b-advantages__title {
+    margin-bottom: 15px;
+    font: 700 22px Montserrat;
+    color: #253241;
+  }
+
+  .b-advantages.active {
+    color: #fff;
+    background-color: #253241;
+  }
+
+  .b-advantages.active .b-advantages__title {
+    color: #fff;
+  }
+
+  .b-advantages.active .b-advantages__ic {
+    color: #fff;
+  }
+
+.serviceShadow{
+    box-shadow: 0 0 12px 8px rgb(129 129 129 / 6%);
+}
+
+.serviceActive > div:after{
+    border-color: #fff #fff transparent transparent;
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-width: 7px;
+    border-style: solid;
+}
+
+.calltoaction{
+    letter-spacing: -.02em;
+    font: 600 36px/1 Montserrat;
+}
+
+.bl-corner:after{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    border-top: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #253241;
+    border-left: 7px solid #253241;
+    content: '';
+}
+
+.numberLarge{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    font: 800 120px/1 Montserrat;
+    color: #253241;
+}
+
+.numberLarge:before{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 8px rgb(129 129 129 / 6%);
+    content: '';
+}
+
+.numberLarge:after{
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(185 28 28 / 1);
+    content: '';
+}
+
+@media screen and (min-width: 1024px) {
+    .numberLines:not(:last-child):after{
+        content:''
+    }
+}
+
+.numberLines:not(:last-child):after {
+    position: absolute;
+    top: 55px;
+    left: calc(100% - 83px);
+    width: 167px;
+    height: 2px;
+    border: 2px dotted #000;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1600px){
+    .numberLines:not(:last-child):after {
+        width: 120px;
+        left: calc(100% - 60px);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .numberLines:not(:last-child):after {
+        top: 40px;
+    }
+}
+
+.cutCornerBL,.cutCornerTR{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cutCornerBL:after,.cutCornerTR:after{
+    position: absolute;
+    border-width: 17px;
+    border-style: solid;
+    content: '';
+}
+
+.cutCornerBL:after{
+    bottom: 0;
+    left: 0;
+    border-color: transparent transparent #fff #fff;
+}
+
+.cutCornerTR:after{
+    top: 0;
+    right: 0;
+    border-color: #fff #fff transparent transparent;
+}
